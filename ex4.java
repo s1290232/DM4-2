@@ -1,9 +1,16 @@
 import java.util.Random;
-public class DM4 {
+import java.util.Scanner;
+public class DM4_1 {
 	public static void main(String[] args) {
 		Random r = new Random();
 		int ram;
 		int cntH = 0, cntT = 0;
+		String name;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Who are you?");
+		name = sc.next();
+		System.out.println("Hello, "+name+"!");
 
 		System.out.println("Tossing a coin ...");
 		for(int i = 1; i <= 3; i ++) {
