@@ -1,4 +1,5 @@
 import java.util.Random;
+
 public class DM4 {
 	public static void main(String[] args) {
 		Random r = new Random();
@@ -21,6 +22,6 @@ public class DM4 {
 			}
 		}
 		System.out.println("Heads: "+cntH+", Tails: "+cntT);
+		if (cntH > cntT) System.out.println("You won!");
+		else System.out.println("You lost...");
 	}
-
-}
